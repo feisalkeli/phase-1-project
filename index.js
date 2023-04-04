@@ -1,6 +1,30 @@
-function fetchData() {
-  fetch("http://localhost:3000/todos/1")
+function fetchProducts() {
+  fetch("http://localhost:3000/products")
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => data.forEach((product) => appendData(product)));
 }
-fetchData();
+
+function appendData(products) {
+  let card = document.createElement("div");
+  card.className = "data";
+  card.innerHTML = `
+ 
+  <div class="card" style="width: 18rem;">
+  <img src=${products.thumbnail} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${products.title}</h5>
+    <p class="card-text">${products.description}</p>
+    <a href="#" class="btn btn-primary">Buy Product</a>
+  </div>
+</div>
+
+  `;
+  document.querySelector("#main").append(card);
+}
+
+function clickOnProduct() {}
+
+function initializeData() {
+  fetchProducts();
+}
+initializeData();
