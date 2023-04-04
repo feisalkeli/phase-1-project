@@ -1,12 +1,24 @@
-body {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.card {
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+*/ .card {
   display: flex;
   flex-direction: column;
 }
+.button {
+  color: blue;
+  background-color: white;
+  border-radius: 10px;
+}
 #main {
-  margin-top: 20px;
+  display: inline-flex;
+
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.main-main {
+  display: inline-grid;
 }
