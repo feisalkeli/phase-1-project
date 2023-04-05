@@ -1,24 +1,8 @@
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css);
+/* #main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 } */
-*/ .card {
-  display: flex;
-  flex-direction: column;
-}
-.button {
-  color: blue;
-  background-color: white;
-  border-radius: 10px;
-}
-#main {
-  display: inline-flex;
-
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-.main-main {
-  display: inline-grid;
+.data {
+  display: block;
 }
