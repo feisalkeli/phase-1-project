@@ -28,11 +28,67 @@
         </div>
       </nav>
     </section>
+    <!-- Heading -->
+    <h3 class="heading-1">Available Products</h3>
+
+    <div class="row" id="displayinfo"></div>
     <!-- Main Section -->
     <div class="main-container">
-      <div id="main"></div>
+      <div
+        id="main"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+      ></div>
     </div>
-    <div class="preview"></div>
+    <!-- Overlay add and remove -->
+    <div id="preview" class="hidden">
+      <!-- <div class="card-preview" style="width: 18rem" id="content">
+        <img src="#" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">${products.title}</h5>
+          <p class="card-text">${products.description}</p>
+          <button id="info-button" class="btn btn-primary">Display Info</button>
+          <button id="remove-item" class="btn btn-primary">Go back</button>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Form Section -->
+    <h3 class="heading">Add Products</h3>
+    <div class="container">
+      <form id="form-value">
+        <div class="form-input">
+          <label for="name">Product:</label>
+          <input
+            type="text"
+            id="product"
+            name="name"
+            placeholder="Enter your Product..."
+          />
+        </div>
+        <div class="form-input">
+          <label for="image_url">Image:</label>
+          <input
+            type="text"
+            id="image_url"
+            name="email"
+            placeholder="Enter your image url..."
+          />
+        </div>
+        <div class="form-input">
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="message"
+            placeholder="Enter your description..."
+          ></textarea>
+        </div>
+        <div class="form-input">
+          <button id="submit-button" type="submit" value="Submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
