@@ -7,7 +7,7 @@
       "price": 549,
       "discountPercentage": 12.96,
       "rating": 4.69,
-      "stock": 81,
+      "stock": 94,
       "brand": "Apple",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
@@ -26,7 +26,7 @@
       "price": 899,
       "discountPercentage": 17.94,
       "rating": 4.44,
-      "stock": 28,
+      "stock": 25,
       "brand": "Apple",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
@@ -161,12 +161,6 @@
         "https://i.dummyjson.com/data/products/10/3.jpg",
         "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
       ]
-    },
-    {
-      "title": "pop",
-      "thumbnail": "https://fonexpress.net/wp-content/uploads/2022/10/TECNO-POP-6-PRO.png",
-      "description": "best mid-range",
-      "id": 11
     }
   ]
 }
