@@ -43,6 +43,8 @@ function appendData(products) {
 
 
     `;
+    document.querySelector("#preview").append(card);
+
     //Selecting the go back button
     document.querySelector("#remove").addEventListener("click", () => {
       //Removing the div from the Dom
@@ -74,8 +76,8 @@ function submitData(e) {
   e.preventDefault();
 
   let data = {
-    product: e.target.product.value,
-    image: e.target.image_url.value,
+    title: e.target.product.value,
+    thumbnail: e.target.image_url.value,
     description: e.target.description.value,
   };
   addProduct(data);
@@ -116,6 +118,29 @@ function addProduct(product) {
     .then((res) => res.json())
     .then((data) => console.log(data));
 }
+
+///Search for Products
+document
+  .getElementById("search-items")
+  .addEventListener("keyup", searchProducts);
+
+//function that searches for products
+function searchProducts() {
+  const search = document.getElementById("search");
+  //console.log(search);
+  const filter = search.value.toLowerCase();
+  const items = document.querySelector(".card-title");
+
+  items.forEach((item) => {
+    let text = item.textContent;
+    if (text.toLowerCase().includes(filter.toLowerCase())) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+//Initialisez the data
 function initializeData() {
   window.addEventListener("DOMContentLoaded", fetchProducts);
 }
